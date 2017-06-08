@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+}
+
+.container--title {
+    background: #469e49;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.container--item {
+    background: #f4f4f4;
+    color: #444;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: .2rem;
+}
+
+.error-message {
+    background: #ffecec;
+    color: #6b0a0a;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.note-container {
+    margin: 1rem;
+    color: #555;
+    display: flex;
+    flex-direction: row;
+}
+
+.note-container--form {
+    flex: 25%;
+}
+
+.note-container--data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 75%;
+}
+
+.note-container input {
+    border: 0;
+    border-bottom: 1px solid #666;
+    outline: none;
+    width: 200px;
+    padding: 5px;
+    font-size: .9rem;
+    color: #444;
+}
+
+.note-container button:hover {
+    transition: all .5s;
+    background: #306932;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note-container button {
+    height: 30px;
+    width: 220px;
+    border: 1px solid #469e49;
+    border-radius: 0;
+    background: #ffffff;
+    color: #306932;
+}
+
+.note-container__note {
+    margin-bottom: 1.5rem;
+    margin-right: 3rem;
+    max-width: 200px;
+    flex: 30%;
+    background: #e6e6e6;
+}
+
+.note-container__note--title {
+    font-size: 1.1rem;
+    padding: 3px;
+    background: #469e49;
+    color: white;
+}
+
+.note-container__note--content {
+    font-size: .9rem;
+    padding: 5px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyApp</title>
+    <link rel="stylesheet" href="assets/app.css" />
+
+</head>
+
+<body>
+    <div class="container" ng-controller="MyController as ctrl">
+        <div class="container--title">{{ctrl.title}}</div>
+        <developer-note></developer-note>
+    </div>
+    <section>
+        <script src="/node_modules/systemjs/dist/system.js"></script>
+        <script src="system.config.js"></script>
+        <script>
+            SystemJS.import("app");
+        </script>
+    </section>
+    <!--<section>
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="main.js"></script>
+        <script src="app/services/myservice.js"></script>
+        <script src="app/controllers/mycontroller.js"></script>
+        <script src="app/components/developer-note.component.js"></script>
+    </section>-->
+</body>
+
+</html>

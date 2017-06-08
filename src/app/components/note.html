@@ -1,0 +1,18 @@
+<div class="note-container">
+    <div class="note-container--form">
+        <div>
+            <label>Title</label><br/>
+            <input type="text" ng-model="$ctrl.currentNote.title" /><br/><br/>
+            <label>Description</label><br/>
+            <input type="text" ng-model="$ctrl.currentNote.description" /><br/><br/><br/>
+            <button ng-click="$ctrl.addNote()">Add Note</button>
+        </div>
+    </div>
+    <div class="note-container--data">
+        <div class="note-container__note" ng-repeat="note in $ctrl.notes">
+            <div class="note-container__note--title">{{note.title}}</div>
+            <div class="note-container__note--content">{{note.description}}</div>
+        </div>
+
+    </div>
+</div>
